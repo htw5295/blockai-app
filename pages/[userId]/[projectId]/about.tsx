@@ -1,3 +1,4 @@
+import Layout from '@components/project/Layout';
 import Seo from '@components/Seo';
 import type { NextPage } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -5,15 +6,16 @@ import styled from 'styled-components';
 
 const Container = styled.div``;
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
-    <Container>
+    <Layout>
       <Seo />
-    </Container>
+      <Container>asdfasdf</Container>
+    </Layout>
   );
 };
 
-export default Home;
+export default About;
 
 export const getServerSideProps = async (ctx: any) => {
   return {
